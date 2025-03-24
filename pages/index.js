@@ -1,7 +1,7 @@
-import Head from 'next/head';
-import dynamic from 'next/dynamic';
+import Head from 'next/head'
+import dynamic from 'next/dynamic'
 
-const DietMealWebView = dynamic(() => import('../components/DietMealWebView'), { ssr: false });
+const DietMealWebView = dynamic(() => import('../components/DietMealWebView'), { ssr: false })
 
 export default function Home() {
   return (
@@ -13,5 +13,5 @@ export default function Home() {
       </Head>
       <DietMealWebView />
     </>
-  );
+  )
 }
